@@ -1,0 +1,109 @@
+.wrap-films{
+  padding: 30px 15px;
+}
+
+.wrap-films h2{
+  font-size: 1.5em;
+}
+
+.wrap-films ul.content-movie {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.wrap-films ul.content-movie > li{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding: 25px 30px;
+  margin: 15px 0;
+}
+
+.wrap-films ul li h4{
+  color: #000000;
+  text-align: left;
+  font-size: 1.5rem;
+  cursor: pointer !important;
+}
+.wrap-films ul li h4 strong{
+  color: #FFE81F;
+  text-shadow: -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000;
+}
+
+.wrap-films ul li p{
+  color: #000000;
+  text-align: left;
+}
+.wrap-films ul li ul.people li{
+  text-align: left;
+}
+.wrap-films ul li ul.people li a{
+  font-size: 0.75rem;
+  text-align: left;
+  color: #000000 !important;
+  text-decoration: underline;
+}
+
+.modal{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #000000;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.modal .content-modal{
+  text-align: center;
+  padding: 10%;
+  animation: swipeUp infinite 20s;
+  overflow: hidden;
+}
+.modal .content-modal h2{
+  color: #FFE81F;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.modal .content-modal p{
+  color: #FFE81F !important;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  text-align: justify;
+}
+
+.close{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  color: #FFE81F;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #FFE81F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+.show {
+  display: block;
+  z-index: 9999;
+}
+
+.hide {
+  display: none;
+  z-index: -1;
+}
+
+@keyframes swipeUp{
+  0% {
+    transform: translateY(90%);
+  }
+  100% {
+    transform: translateY(-90%);
+  }
+}

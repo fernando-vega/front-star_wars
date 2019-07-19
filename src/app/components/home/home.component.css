@@ -1,0 +1,32 @@
+.wrap-title{
+  margin: 50px 0;
+}
+h1, h3{
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: -3px -3px 0 #FFE81F,  
+  3px -3px 0 #FFE81F,
+  -3px 3px 0 #FFE81F,
+   3px 3px 0 #FFE81F;
+}
+
+h3{
+ font-size: 2rem;
+}
+.menu{
+  background: #FFE81F;
+  width: 100%;
+  padding: 15px;
+  margin-top: 50px;
+  transition: .3s;
+}
+.menu:hover{
+  background: #000;
+  padding: 15px;
+}
+.menu:hover a{
+  color: #ffffff;
+}
+a{
+  color: #000;
+}

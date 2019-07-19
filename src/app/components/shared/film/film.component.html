@@ -1,0 +1,24 @@
+<div class="wrap-films">
+  <h2>Films</h2>
+  <ul class="row center-xs content-movie">
+    <li class="col-xs-12 col-sm-4" *ngFor="let film of films">
+      <div>
+          <h4 (click)="openModal(film.nombre, film.descripcion)">Nombre: <strong>{{ film.nombre }} </strong></h4>
+          <p>Numero de episodios: {{ film.numero_episodio }}</p>
+          <p>Director: {{ film.director }}</p>
+          <ul class="people">
+            <li *ngFor="let person  of film.personajes">
+              <div> <a href="">{{ person.nombre }}</a></div>
+            </li>
+          </ul>
+      </div> 
+    </li>
+  </ul>
+  <div class="modal" [ngClass]="{show: shouldShow, hide: !shouldShow}">
+    <div (click)="closeModal()" class="close">X</div>
+    <div class="content-modal">
+      <h2>{{ name }}</h2>
+      <p>{{ description }}</p> 
+    </div>
+  </div>
+</div>
